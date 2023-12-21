@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Workout Plan for Mom</title>
+  <style>
+    .title {
+      font-family: 'Open Sans', sans-serif;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .title h1 {
+      font-size: 2em;
+      color: #000000;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 0;
+    }
+    body {
+      font-family: 'Open Sans', sans-serif;
+      background-color: #ffffff;
+      margin: 0;
+      padding: 20px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      row-gap: 8px;
+      column-gap: 8px;
+      justify-items: center;
+      max-width: 800px; /* A4 paper width in pixels */
+      margin: 0 auto; /* Center the grid on the page */
+    }
+    .exercise {
+      position: relative;
+      background-color: #F0D0D2;
+      padding: 0px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+    }
+    .exercise img {
+      max-width: 100%; /* Set image width to 100% */
+      object-fit: cover; /* Maintain aspect ratio and fill the container */
+      border-radius: 0px;
+    }
+    .exercise h3 {
+      margin: 0;
+      font-size: 1.0em;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #F0D0D2;
+      padding: 8px;
+      margin: 0;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 700; /* Use bold (700) weight for headers */
+    }
+    .exercise p {
+      background-color: #EC635E;
+      color: #fff;
+      padding: 6px;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      margin: 0;
+      font-size: 0.8em;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400; /* Use regular (400) weight for paragraphs */
+    }
+    .header-row {
+      display: grid;
+      text-transform: uppercase;
+      grid-template-columns: repeat(4, 1fr);
+      grid-gap: 8px;
+      text-align: center;
+      font-weight: bold;
+      font-style: italic; /* Apply italic style */
+      max-width: 800px; /* A4 paper width in pixels */
+      margin: 0 auto; /* Center the grid on the page */
+    }
+    .header-row-cell {
+      background-color: #EC635E;
+      color: #f8f8f8;
+      padding: 10px;
+      text-align: center;
+    }
+    .exercise-number {
+      position: absolute;
+      background-color: #F0D0D2;
+      top: 5px;
+      left: 5px;
+      padding: 4px 8px;
+      border-radius: 50%;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="title">
+    <h1>Workout Plan</h1>
+  </div>
+    <!-- Header row with names of the week -->
+    <div class="header-row">
+      <div class="header-row-cell">Monday</div>
+      <div class="header-row-cell">Tuesday</div>
+      <div class="header-row-cell">Wednesday</div>
+      <div class="header-row-cell">Thursday</div>
+      <!-- Continue adding the remaining days of the week -->
+    </div>
+  <div class="grid">
+    <!-- Exercise 1 -->
+    <div class="exercise">
+      <img src="images/zvih_panvy_zo_zeme.jpeg" alt="Exercise 1">
+      <div class="exercise-number">1</div>
+      <h3>Zvih pánvy zo zeme</h3>
+      <p>Sets: 3 Reps: 15</p>
+    </div>
+    
+    <!-- Exercise 2 -->
+    <div class="exercise">
+      <img src="images/zvdih_panvy_zo_zeme.jpeg" alt="Exercise 2">
+      <div class="exercise-number">1</div>
+      <h3>Zdvih pánvy zo zeme</h3>
+      <p>Sets: 3 Reps: 15</p>
+    </div>
+    
+    <!-- Add the remaining exercises similarly -->
+    
+    <!-- Exercise 3 -->
+    <div class="exercise">
+      <img src="images/zadok_posilovanie_hamstringov.jpeg" alt="Exercise 3">
+      <div class="exercise-number">1</div>
+      <h3>Posilňovanie hamstringov</h3>
+      <p>Sets: 3 Reps: 15</p>
+    </div>
+    
+    <!-- Exercise 4 -->
+    <div class="exercise">
+      <img src="images/zadok_drep_s_cinkou.jpeg" alt="Exercise 4">
+      <div class="exercise-number">1</div>
+      <h3>Drep s činkou</h3>
+      <p>Sets: 5 Reps: 8</p>
+    </div>
+
+    <!-- Continue replacing the exercises with their corresponding image sources and titles -->
+
+    <!-- Exercise 5 -->
+    <div class="exercise">
+      <img src="images/zadok_drep_s_cinkami.jpeg" alt="Exercise 5">
+      <div class="exercise-number">2</div>
+      <h3>Drep s činkami</h3>
+      <p>Sets: 4 Reps: 12</p>
+    </div>
+
+    <!-- Exercise 6 -->
+    <div class="exercise">
+      <img src="images/zadok_drep_cinkou.jpeg" alt="Exercise 6">
+      <div class="exercise-number">2</div>
+      <h3>Drep činkou</h3>
+      <p>Sets: 3 Reps: 10</p>
+    </div>
+
+    <!-- Exercise 7 -->
+    <div class="exercise">
+      <img src="images/zadok_bocny_zvdih_stehien.jpeg" alt="Exercise 7">
+      <div class="exercise-number">2</div>
+      <h3>Bocný zdvih stehien</h3>
+      <p>Sets: 4 Reps: 12</p>
+    </div>
+
+    <!-- Exercise 8 -->
+    <div class="exercise">
+      <img src="images/zadok_bocny_zdvih_stehien.jpeg" alt="Exercise 8">
+      <div class="exercise-number">2</div>
+      <h3>Bocný zdvih stehien</h3>
+      <p>Sets: 3 Reps: 10</p>
+    </div>
+
+    <!-- Exercise 9 -->
+    <div class="exercise">
+      <img src="images/ruky_tricepsovy_zdvih_na_lavicke.jpeg" alt="Exercise 9">
+      <div class="exercise-number">3</div>
+      <h3>Tricepsový zdvih na lavicke</h3>
+      <p>Sets: 4 Reps: 15</p>
+    </div>
+
+    <!-- Exercise 10 -->
+    <div class="exercise">
+      <img src="images/ruky_kliky.jpeg" alt="Exercise 10">
+      <div class="exercise-number">3</div>
+      <h3>Kliky</h3>
+      <p>Sets: 3 Reps: 12</p>
+    </div>
+
+    <!-- Exercise 11 -->
+    <div class="exercise">
+      <img src="images/ramena_upazenie_pri_nahnutom_hrudniku.jpeg" alt="Exercise 11">
+      <div class="exercise-number">3</div>
+      <h3>Upaženie pri nahnutom hrudníku</h3>
+      <p>Sets: 5 Reps: 10</p>
+    </div>
+
+    <!-- Exercise 12 -->
+    <div class="exercise">
+      <img src="images/ramena_natahovanie_deltovych_svalov.jpeg" alt="Exercise 12">
+      <div class="exercise-number">3</div>
+      <h3>Natahovanie deltových svalov</h3>
+      <p>Sets: 4 Reps: 8</p>
+    </div>
+
+    <!-- Exercise 12 -->
+    <div class="exercise">
+      <img src="images/ramena_natahovanie_deltovych_svalov.jpeg" alt="Exercise 12">
+      <div class="exercise-number">3</div>
+      <h3>Natahovanie deltových svalov</h3>
+      <p>Sets: 4 Reps: 8</p>
+    </div>
+
+    <!-- Exercise 12 -->
+    <div class="exercise">
+      <img src="images/ramena_natahovanie_deltovych_svalov.jpeg" alt="Exercise 12">
+      <div class="exercise-number">3</div>
+      <h3>Natahovanie deltových svalov</h3>
+      <p>Sets: 4 Reps: 8</p>
+    </div>
+
+    <!-- Exercise 12 -->
+    <div class="exercise">
+      <img src="images/ramena_natahovanie_deltovych_svalov.jpeg" alt="Exercise 12">
+      <div class="exercise-number">3</div>
+      <h3>Natahovanie deltových svalov</h3>
+      <p>Sets: 4 Reps: 8</p>
+    </div>
+
+    <!-- Exercise 12 -->
+    <div class="exercise">
+      <img src="images/ramena_natahovanie_deltovych_svalov.jpeg" alt="Exercise 12">
+      <div class="exercise-number">3</div>
+      <h3>Natahovanie deltových svalov</h3>
+      <p>Sets: 4 Reps: 8</p>
+    </div>
+
+    <!-- End of Exercise Blocks -->
+  </div>
+
+</body>
+</html>
