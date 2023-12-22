@@ -23,9 +23,12 @@
       margin: 0;
       padding: 20px;
     }
+    a {
+      color: #ffffff;
+    }
     .grid {
       display: grid;
-      grid-template-columns: repeat(5, 1fr);
+      grid-template-columns: repeat(8, 1fr);
       row-gap: 8px;
       column-gap: 8px;
       justify-items: center;
@@ -33,9 +36,26 @@
       margin: 0 auto; /* Center the grid on the page */
       justify-items: end
     }
+    .warmup {
+      position: relative;
+      /*background-color: #5e404c;*/
+      background-color: #8af2b5;
+      padding: 0px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      text-align: center;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+    } 
+    .warmup h3 {
+      color: #626262;
+    }
     .exercise {
       position: relative;
-      background-color: #F0D0D2;
+      background-color: #e5bcff;
       padding: 0px;
       box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
       text-align: center;
@@ -56,21 +76,34 @@
       object-fit: cover; /* Maintain aspect ratio and fill the container */
       border-radius: 0px;
     }
-    .exercise h3 {
+    h2 {
       margin: 0;
       font-size: 1.0em;
       bottom: 0;
       left: 0;
       right: 0;
-      background-color: #F0D0D2;
+      color: #ffffff;
       padding: 8px;
       margin: 0;
       font-family: 'Open Sans', sans-serif;
       font-weight: 700; /* Use bold (700) weight for headers */
     }
     .exercise p {
-      background-color: #EC635E;
-      color: #fff;
+      background-color: #8af2b5;
+      color: #626262;
+      padding: 6px;
+      border-top-right-radius: 20px;
+      border-top-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+      border-bottom-left-radius: 20px;
+      margin: 0;
+      font-size: 0.6em;
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 400; /* Use regular (400) weight for paragraphs */
+    }
+    .warmup p {
+      background-color: #e5bcff;
+      color: #ffffff;
       padding: 6px;
       border-top-right-radius: 20px;
       border-top-left-radius: 20px;
@@ -82,7 +115,7 @@
       font-weight: 400; /* Use regular (400) weight for paragraphs */
     }
     .header-row-cell {
-      background-color: #EC635E;
+      background-color: #7b09c1;
       font-style: italic;
       color: #f8f8f8;
       padding: 12px;
@@ -90,9 +123,13 @@
       writing-mode: vertical-rl; /* Vertical writing mode for modern browsers */
       transform: rotate(180deg); /* Rotate the text */
     }
+    .header-row-cell h1 {
+      color: #f8f8f8;
+    }
     .exercise-number {
       position: absolute;
-      background-color: #F0D0D2;
+      background-color: #8af2b5;
+      color: #626262;
       top: 5px;
       left: 5px;
       padding: 4px 8px;
@@ -111,7 +148,7 @@
 
     /* Style for individual icons within the div */
     .exercise-icons img {
-      background-color: #F0D0D2;
+      background-color: #8af2b5;
       border-radius: 50%;
       width: 15px; /* Set the width of icons */
       height: 15px; /* Set the height of icons */
@@ -124,198 +161,414 @@
   <div class="title">
     <h1>Workout Plan</h1>
   <div class="grid">
-    <!-- Exercise 1 -->
+
+    
+    
+    <div class="header-row-cell">
+      <h1>Friday</h1>
+    </div>
+    
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Skipping without rope">
+            <div class="exercise-icons">
+                <img src="icons/warmup.png" alt="warmup icon">
+            </div>
+            <h2>Skipping without rope</h2>
+            <a href="https://youtu.be/CYGeazlNbU4?si=ixoAg12bU3g7njYE">
+                <p>Sets: 2.0 Reps: 30s</p>
+            </a>
+        </div>
+        
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Stretch Wrist & Ankles">
+            <div class="exercise-icons">
+                <img src="icons/warmup.png" alt="warmup icon">
+            </div>
+            <h2>Stretch Wrist & Ankles</h2>
+            <a href="https://youtu.be/oVyhNRtXIio?si=Y6xmhjW1bbcpDdnE">
+                <p>Sets: 2.0 Reps: 15-20 sec each</p>
+            </a>
+        </div>
+        
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Bridge">
+            <div class="exercise-icons">
+                <img src="icons/warmup.png" alt="warmup icon">
+            </div>
+            <h2>Bridge</h2>
+            <a href="https://youtu.be/-KKADnBsPzw?si=dR1I8N2tzoVhmcoH">
+                <p>Sets: 3.0 Reps: 10 inhales</p>
+            </a>
+        </div>
+        
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Side lunges">
+            <div class="exercise-icons">
+                <img src="icons/glutes.png" alt="Glutes icon">
+            </div>
+            <h2>Side lunges</h2>
+            <a href="https://youtu.be/tlUg1DXhHm8?si=ALTgFNzv3yuAw8x4">
+                <p>Sets: 3.0 Reps: 5 each leg</p>
+            </a>
+        </div>
+        
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Froggy glutes">
+            <div class="exercise-icons">
+                <img src="icons/glutes.png" alt="Glutes icon">
+            </div>
+            <h2>Froggy glutes</h2>
+            <a href="https://youtu.be/wl10q6aqy-4?si=CwmunUCwKXs4VA-K">
+                <p>Sets: 3.0 Reps: 5</p>
+            </a>
+        </div>
+        
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Medved">
+            <div class="exercise-icons">
+                <img src="icons/glutes.png" alt="Glutes icon">
+            </div>
+            <h2>Medved</h2>
+            <a href="https://youtu.be/Hcy81KUTIZ8?si=qghwtdhMxrC-9pHs">
+                <p>Sets: 3.0 Reps: 5 each leg</p>
+            </a>
+        </div>
+        
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Glutekick cross over">
+            <div class="exercise-icons">
+                <img src="icons/glutes.png" alt="Glutes icon">
+            </div>
+            <h2>Glutekick cross over</h2>
+            <a href="https://youtu.be/e25jpcjeyAQ?si=eOeM2bMRgYISWixg">
+                <p>Sets: 3.0 Reps: 10 each leg</p>
+            </a>
+        </div>
+        
     <div class="header-row-cell">
       <h1>Monday</h1>
     </div>
     
-    <div class="exercise">
-      <img src="images/zvih_panvy_zo_zeme.jpeg" alt="Exercise 1">
-      <!-- <div class="exercise-number">1</div> -->
-      <div class="exercise-icons">
-        <img src="icons/but.png" alt="Icon 1">
-        <img src="icons/back.png" alt="Icon 2">
-        <img src="icons/chest.png" alt="Icon 3">
-        <img src="icons/waist.png" alt="Icon 4">
-      </div>
-      <a href="exercise1_link_here">
-        <h3>Zvih pánvy zo zeme</h3>
-      </a>
-      <p>Sets: 3 Reps: 15</p>
-    </div>
-    
-    <!-- Exercise 2 -->
-    <div class="exercise">
-      <img src="images/zvdih_panvy_zo_zeme.jpeg" alt="Exercise 2">
-      <div class="exercise-number">1</div>
-      <h3>Zdvih pánvy zo zeme</h3>
-      <p>Sets: 3 Reps: 15</p>
-    </div>
-    
-    <!-- Add the remaining exercises similarly -->
-    
-    <!-- Exercise 3 -->
-    <div class="exercise">
-      <img src="images/zadok_posilovanie_hamstringov.jpeg" alt="Exercise 3">
-      <div class="exercise-number">1</div>
-      <h3>Posilňovanie hamstringov</h3>
-      <p>Sets: 3 Reps: 15</p>
-    </div>
-    
-    <!-- Exercise 4 -->
-    <div class="exercise">
-      <img src="images/zadok_drep_s_cinkou.jpeg" alt="Exercise 4">
-      <div class="exercise-number">1</div>
-      <h3>Drep s činkou</h3>
-      <p>Sets: 5 Reps: 8</p>
-    </div>
-
-    <!-- Continue replacing the exercises with their corresponding image sources and titles -->
-
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Side step Jacks">
+            <div class="exercise-icons">
+                <img src="icons/warmup.png" alt="warmup icon">
+            </div>
+            <h2>Side step Jacks</h2>
+            <a href="https://youtu.be/p75NmUtH9so?si=VlqT7f5pvhw4c8FP">
+                <p>Sets: 2.0 Reps: 20</p>
+            </a>
+        </div>
+        
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Pendulum Swings">
+            <div class="exercise-icons">
+                <img src="icons/warmup.png" alt="warmup icon">
+            </div>
+            <h2>Pendulum Swings</h2>
+            <a href="https://youtu.be/RN2qWm0f3eM?si=sUWsg3X4T8AtD6EP">
+                <p>Sets: 2.0 Reps: 10 each leg</p>
+            </a>
+        </div>
+        
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Bridge">
+            <div class="exercise-icons">
+                <img src="icons/warmup.png" alt="warmup icon">
+            </div>
+            <h2>Bridge</h2>
+            <a href="https://youtu.be/-KKADnBsPzw?si=dR1I8N2tzoVhmcoH">
+                <p>Sets: 3.0 Reps: 10 inhales</p>
+            </a>
+        </div>
+        
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Bodyweight Squats">
+            <div class="exercise-icons">
+                <img src="icons/glutes.png" alt="Glutes icon">
+            </div>
+            <h2>Bodyweight Squats</h2>
+            <a href="https://youtu.be/42bFodPahBU?si=7oDbPxu86BIQTFZF">
+                <p>Sets: 3.0 Reps: 15</p>
+            </a>
+        </div>
+        
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Fire Hydrant">
+            <div class="exercise-icons">
+                <img src="icons/glutes.png" alt="Glutes icon">
+            </div>
+            <h2>Fire Hydrant</h2>
+            <a href="https://youtu.be/7LnuhLi-78I?si=byguogJQZwQlRnCC">
+                <p>Sets: 3.0 Reps: 12 each leg</p>
+            </a>
+        </div>
+        
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Side Lying Forward Leg Lift">
+            <div class="exercise-icons">
+                <img src="icons/glutes.png" alt="Glutes icon">
+            </div>
+            <h2>Side Lying Forward Leg Lift</h2>
+            <a href="https://youtu.be/rrs0mzQSMQI?si=c9gHUJr-HztbdHOd">
+                <p>Sets: 3.0 Reps: 12 each leg</p>
+            </a>
+        </div>
+        
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Glute kickback">
+            <div class="exercise-icons">
+                <img src="icons/glutes.png" alt="Glutes icon">
+            </div>
+            <h2>Glute kickback</h2>
+            <a href="https://youtu.be/D4gxkgZQkAg?si=AcJ1gFHcNBnVh15L">
+                <p>Sets: 3.0 Reps: 12 each leg</p>
+            </a>
+        </div>
+        
     <div class="header-row-cell">
-      <h1>Thurdsay</h1>
+      <h1>Thursday</h1>
     </div>
-    <!-- Exercise 5 -->
-    <div class="exercise">
-      <img src="images/zadok_drep_s_cinkami.jpeg" alt="Exercise 5">
-      <div class="exercise-number">2</div>
-      <h3>Drep s činkami</h3>
-      <p>Sets: 4 Reps: 12</p>
+    
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Shoulder Stretch">
+            <div class="exercise-icons">
+                <img src="icons/warmup.png" alt="warmup icon">
+            </div>
+            <h2>Shoulder Stretch</h2>
+            <a href="https://youtu.be/9k0EN2RCGgU?si=ipduILEpyrbdEnV2">
+                <p>Sets: 2.0 Reps: 15 sec each arm</p>
+            </a>
+        </div>
+        
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Alternating hooks">
+            <div class="exercise-icons">
+                <img src="icons/warmup.png" alt="warmup icon">
+            </div>
+            <h2>Alternating hooks</h2>
+            <a href="https://youtu.be/wiyvVpEKOsc?si=nUJCsWud6A5cPq_w">
+                <p>Sets: 3.0 Reps: 12</p>
+            </a>
+        </div>
+        
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Mountain Climbers">
+            <div class="exercise-icons">
+                <img src="icons/warmup.png" alt="warmup icon">
+            </div>
+            <h2>Mountain Climbers</h2>
+            <a href="https://youtu.be/wQq3ybaLZeA?si=LVIR62TZEVpIdCA5">
+                <p>Sets: 2.0 Reps: 20</p>
+            </a>
+        </div>
+        
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Knee push-ups">
+            <div class="exercise-icons">
+                <img src="icons/chest.png" alt="Chest icon">
+            </div>
+            <h2>Knee push-ups</h2>
+            <a href="https://youtu.be/jWxvty2KROs?si=_aVnbPfwDvKa2Voh">
+                <p>Sets: 3.0 Reps: 8</p>
+            </a>
+        </div>
+        
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Triceps dips">
+            <div class="exercise-icons">
+                <img src="icons/triceps.png" alt="Triceps icon">
+            </div>
+            <h2>Triceps dips</h2>
+            <a href="https://youtu.be/jWxvty2KROs?si=_aVnbPfwDvKa2Voh">
+                <p>Sets: 3.0 Reps: 8</p>
+            </a>
+        </div>
+        
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Dumbell rear delt row">
+            <div class="exercise-icons">
+                <img src="icons/back.png" alt="Back icon">
+            </div>
+            <h2>Dumbell rear delt row</h2>
+            <a href="https://youtu.be/65gMtswVB1c?si=xUheBV_Uj27dF4Fp">
+                <p>Sets: nan Reps: nan</p>
+            </a>
+        </div>
+        
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Crawl">
+            <div class="exercise-icons">
+                <img src="icons/full_body.png" alt="Full Body icon">
+            </div>
+            <h2>Crawl</h2>
+            <a href="https://youtu.be/M_uNXxdI018?si=CzyOwpATWpd69u4q">
+                <p>Sets: nan Reps: nan</p>
+            </a>
+        </div>
+        
+    <div class="header-row-cell">
+      <h1>Tuesday</h1>
     </div>
-
-    <!-- Exercise 6 -->
-    <div class="exercise">
-      <img src="images/zadok_drep_cinkou.jpeg" alt="Exercise 6">
-      <div class="exercise-number">2</div>
-      <h3>Drep činkou</h3>
-      <p>Sets: 3 Reps: 10</p>
-    </div>
-
-    <!-- Exercise 7 -->
-    <div class="exercise">
-      <img src="images/zadok_bocny_zvdih_stehien.jpeg" alt="Exercise 7">
-      <div class="exercise-number">2</div>
-      <h3>Bocný zdvih stehien</h3>
-      <p>Sets: 4 Reps: 12</p>
-    </div>
-
-    <!-- Exercise 8 -->
-    <div class="exercise">
-      <img src="images/zadok_bocny_zdvih_stehien.jpeg" alt="Exercise 8">
-      <div class="exercise-number">2</div>
-      <h3>Bocný zdvih stehien</h3>
-      <p>Sets: 3 Reps: 10</p>
-    </div>
-
+    
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Shoulder Stretch">
+            <div class="exercise-icons">
+                <img src="icons/warmup.png" alt="warmup icon">
+            </div>
+            <h2>Shoulder Stretch</h2>
+            <a href="https://youtu.be/9k0EN2RCGgU?si=ipduILEpyrbdEnV2">
+                <p>Sets: 2.0 Reps: 15 sec each arm</p>
+            </a>
+        </div>
+        
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Plank Hold">
+            <div class="exercise-icons">
+                <img src="icons/warmup.png" alt="warmup icon">
+            </div>
+            <h2>Plank Hold</h2>
+            <a href="https://youtu.be/Fcbw82ykBvY?si=3sls-fR-e6I_R47S">
+                <p>Sets: 2.0 Reps: 30 sec</p>
+            </a>
+        </div>
+        
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Montain climber">
+            <div class="exercise-icons">
+                <img src="icons/warmup.png" alt="warmup icon">
+            </div>
+            <h2>Montain climber</h2>
+            <a href="https://youtu.be/wQq3ybaLZeA?si=LVIR62TZEVpIdCA5">
+                <p>Sets: 2.0 Reps: 15 each leg</p>
+            </a>
+        </div>
+        
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Dead Bug">
+            <div class="exercise-icons">
+                <img src="icons/abdominals.png" alt="Abdominals icon">
+            </div>
+            <h2>Dead Bug</h2>
+            <a href="https://www.youtube.com/watch?v=bXMQkRowNk8&list=PLoVy-85EFtK899UosmFY3vviTqy4s47-q&index=4&ab_channel=LeapFitness">
+                <p>Sets: 3.0 Reps: 12 each side</p>
+            </a>
+        </div>
+        
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Cross Arm Crunches">
+            <div class="exercise-icons">
+                <img src="icons/abdominals.png" alt="Abdominals icon">
+            </div>
+            <h2>Cross Arm Crunches</h2>
+            <a href="https://youtu.be/Qz3ylqqJ90M?si=WRr4TPbiWqCWN8Cs">
+                <p>Sets: 3.0 Reps: 10-15</p>
+            </a>
+        </div>
+        
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Heel Touch">
+            <div class="exercise-icons">
+                <img src="icons/abdominals.png" alt="Abdominals icon">
+            </div>
+            <h2>Heel Touch</h2>
+            <a href="https://youtu.be/9bR-elyolBQ?si=9u1FnXp7XfU7TA-f">
+                <p>Sets: 3.0 Reps: 15-20 each side</p>
+            </a>
+        </div>
+        
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Body Saw">
+            <div class="exercise-icons">
+                <img src="icons/core.png" alt="Core icon">
+            </div>
+            <h2>Body Saw</h2>
+            <a href="https://youtu.be/CJHdCRhZCwY?si=kj1_ziE_IVa9PWKb">
+                <p>Sets: 3.0 Reps: 12-15</p>
+            </a>
+        </div>
+        
     <div class="header-row-cell">
       <h1>Wednesday</h1>
     </div>
-
-    <!-- Exercise 9 -->
-    <div class="exercise">
-      <img src="images/ruky_tricepsovy_zdvih_na_lavicke.jpeg" alt="Exercise 9">
-      <div class="exercise-number">3</div>
-      <h3>Tricepsový zdvih na lavicke</h3>
-      <p>Sets: 4 Reps: 15</p>
-    </div>
-
-    <!-- Exercise 10 -->
-    <div class="exercise">
-      <img src="images/ruky_kliky.jpeg" alt="Exercise 10">
-      <div class="exercise-number">3</div>
-      <h3>Kliky</h3>
-      <p>Sets: 3 Reps: 12</p>
-    </div>
-
-    <!-- Exercise 11 -->
-    <div class="exercise">
-      <img src="images/ramena_upazenie_pri_nahnutom_hrudniku.jpeg" alt="Exercise 11">
-      <div class="exercise-number">3</div>
-      <h3>Upaženie pri nahnutom hrudníku</h3>
-      <p>Sets: 5 Reps: 10</p>
-    </div>
-
-    <!-- Exercise 12 -->
-    <div class="exercise">
-      <img src="images/ramena_natahovanie_deltovych_svalov.jpeg" alt="Exercise 12">
-      <div class="exercise-number">3</div>
-      <h3>Natahovanie deltových svalov</h3>
-      <p>Sets: 4 Reps: 8</p>
-    </div>
-
-    <div class="header-row-cell">
-      <h1>Thurdsay</h1>
-    </div>
-    <!-- Exercise 12 -->
-    <div class="exercise">
-      <img src="images/ramena_natahovanie_deltovych_svalov.jpeg" alt="Exercise 12">
-      <div class="exercise-number">3</div>
-      <h3>Natahovanie deltových svalov</h3>
-      <p>Sets: 4 Reps: 8</p>
-    </div>
-
-    <!-- Exercise 12 -->
-    <div class="exercise">
-      <img src="images/ramena_natahovanie_deltovych_svalov.jpeg" alt="Exercise 12">
-      <div class="exercise-number">3</div>
-      <h3>Natahovanie deltových svalov</h3>
-      <p>Sets: 4 Reps: 8</p>
-    </div>
-
-    <!-- Exercise 12 -->
-    <div class="exercise">
-      <img src="images/ramena_natahovanie_deltovych_svalov.jpeg" alt="Exercise 12">
-      <div class="exercise-number">3</div>
-      <h3>Natahovanie deltových svalov</h3>
-      <p>Sets: 4 Reps: 8</p>
-    </div>
-
-    <!-- Exercise 12 -->
-    <div class="exercise">
-      <img src="images/ramena_natahovanie_deltovych_svalov.jpeg" alt="Exercise 12">
-      <div class="exercise-number">3</div>
-      <h3>Natahovanie deltových svalov</h3>
-      <p>Sets: 4 Reps: 8</p>
-    </div>
-    <div class="header-row-cell">
-      <h1>Friday</h1>
-    </div>
-
-        <!-- Exercise 12 -->
-        <div class="exercise">
-          <img src="images/ramena_natahovanie_deltovych_svalov.jpeg" alt="Exercise 12">
-          <div class="exercise-number">3</div>
-          <h3>Natahovanie deltových svalov</h3>
-          <p>Sets: 4 Reps: 8</p>
-        </div>
     
-        <!-- Exercise 12 -->
         <div class="exercise">
-          <img src="images/ramena_natahovanie_deltovych_svalov.jpeg" alt="Exercise 12">
-          <div class="exercise-number">3</div>
-          <h3>Natahovanie deltových svalov</h3>
-          <p>Sets: 4 Reps: 8</p>
+            <img src="images/knee_push-ups.png" alt="Shoulder Stretch">
+            <div class="exercise-icons">
+                <img src="icons/warmup.png" alt="warmup icon">
+            </div>
+            <h2>Shoulder Stretch</h2>
+            <a href="https://youtu.be/9k0EN2RCGgU?si=ipduILEpyrbdEnV2">
+                <p>Sets: 2.0 Reps: 15 sec each arm</p>
+            </a>
         </div>
-    
-        <!-- Exercise 12 -->
+        
         <div class="exercise">
-          <img src="images/ramena_natahovanie_deltovych_svalov.jpeg" alt="Exercise 12">
-          <div class="exercise-number">3</div>
-          <h3>Natahovanie deltových svalov</h3>
-          <p>Sets: 4 Reps: 8</p>
+            <img src="images/knee_push-ups.png" alt="Cobra">
+            <div class="exercise-icons">
+                <img src="icons/warmup.png" alt="warmup icon">
+            </div>
+            <h2>Cobra</h2>
+            <a href="https://youtu.be/z21McHHOpAg?si=9wnOjmVSDVK5bbWK">
+                <p>Sets: 3.0 Reps: 5 inhales/exhales</p>
+            </a>
         </div>
-    
-        <!-- Exercise 12 -->
+        
         <div class="exercise">
-          <img src="images/ramena_natahovanie_deltovych_svalov.jpeg" alt="Exercise 12">
-          <div class="exercise-number">3</div>
-          <h3>Natahovanie deltových svalov</h3>
-          <p>Sets: 4 Reps: 8</p>
+            <img src="images/knee_push-ups.png" alt="Warum-up: Lying twist stretch">
+            <div class="exercise-icons">
+                <img src="icons/core_&_spine.png" alt="Core & Spine icon">
+            </div>
+            <h2>Warum-up: Lying twist stretch</h2>
+            <a href="https://youtu.be/ZI-j_POtzlU?si=mjedJYMdsFyN9K9x">
+                <p>Sets: 2.0 Reps: each side</p>
+            </a>
         </div>
-    <!-- End of Exercise Blocks -->
+        
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Triangle Pose">
+            <div class="exercise-icons">
+                <img src="icons/hamstrings_&_groin.png" alt="Hamstrings & Groin icon">
+            </div>
+            <h2>Triangle Pose</h2>
+            <a href="https://youtu.be/qOYy5m3rr1s?si=-vv6YqV5IUYEBnhZ">
+                <p>Sets: 3.0 Reps: 20-30 sec each side</p>
+            </a>
+        </div>
+        
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="T Plank">
+            <div class="exercise-icons">
+                <img src="icons/abdominals.png" alt="Abdominals icon">
+            </div>
+            <h2>T Plank</h2>
+            <a href="https://youtu.be/rTY5mqJ1HNo?si=JL9P0Va23OVzKwJ5">
+                <p>Sets: 3.0 Reps: 5 each side</p>
+            </a>
+        </div>
+        
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Back bow pulls">
+            <div class="exercise-icons">
+                <img src="icons/back.png" alt="Back icon">
+            </div>
+            <h2>Back bow pulls</h2>
+            <a href="https://youtu.be/GvyCtKvmaVE?si=kM8Mo3IVK1HROuav">
+                <p>Sets: 3.0 Reps: 7</p>
+            </a>
+        </div>
+        
+        <div class="exercise">
+            <img src="images/knee_push-ups.png" alt="Superman">
+            <div class="exercise-icons">
+                <img src="icons/back.png" alt="Back icon">
+            </div>
+            <h2>Superman</h2>
+            <a href="https://youtu.be/pGeaBXLwDtw?si=oBgUN2M909SkP6_r">
+                <p>Sets: 3.0 Reps: 5</p>
+            </a>
+        </div>
+                        
   </div>
-
-  
-
 </body>
 </html>
