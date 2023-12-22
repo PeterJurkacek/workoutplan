@@ -15,6 +15,7 @@
       text-transform: uppercase;
       letter-spacing: 2px;
       margin: 0;
+      padding: 10px;
     }
     body {
       font-family: 'Open Sans', sans-serif;
@@ -24,12 +25,13 @@
     }
     .grid {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       row-gap: 8px;
       column-gap: 8px;
       justify-items: center;
       max-width: 800px; /* A4 paper width in pixels */
       margin: 0 auto; /* Center the grid on the page */
+      justify-items: end
     }
     .exercise {
       position: relative;
@@ -45,6 +47,11 @@
       border-bottom-left-radius: 10px;
     }
     .exercise img {
+      max-width: 100%; /* Set image width to 100% */
+      object-fit: cover; /* Maintain aspect ratio and fill the container */
+      border-radius: 0px;
+    }
+    .exercise iframe {
       max-width: 100%; /* Set image width to 100% */
       object-fit: cover; /* Maintain aspect ratio and fill the container */
       border-radius: 0px;
@@ -74,22 +81,14 @@
       font-family: 'Open Sans', sans-serif;
       font-weight: 400; /* Use regular (400) weight for paragraphs */
     }
-    .header-row {
-      display: grid;
-      text-transform: uppercase;
-      grid-template-columns: repeat(4, 1fr);
-      grid-gap: 8px;
-      text-align: center;
-      font-weight: bold;
-      font-style: italic; /* Apply italic style */
-      max-width: 800px; /* A4 paper width in pixels */
-      margin: 0 auto; /* Center the grid on the page */
-    }
     .header-row-cell {
       background-color: #EC635E;
+      font-style: italic;
       color: #f8f8f8;
-      padding: 10px;
+      padding: 12px;
       text-align: center;
+      writing-mode: vertical-rl; /* Vertical writing mode for modern browsers */
+      transform: rotate(180deg); /* Rotate the text */
     }
     .exercise-number {
       position: absolute;
@@ -100,26 +99,48 @@
       border-radius: 50%;
       font-weight: bold;
     }
+    /* Style for the div containing the icons */
+    .exercise-icons {
+      position: absolute;
+      padding: 4px 4px;
+      font-weight: bold;
+      display: flex;
+      justify-content: space-between; /* Adjusts the space between icons */
+      align-items: center; /* Aligns icons vertically */
+    }
+
+    /* Style for individual icons within the div */
+    .exercise-icons img {
+      background-color: #F0D0D2;
+      border-radius: 50%;
+      width: 15px; /* Set the width of icons */
+      height: 15px; /* Set the height of icons */
+      margin-right: 5px; /* Adjust spacing between icons */
+      padding: 4px 4px;
+    }
   </style>
 </head>
 <body>
   <div class="title">
     <h1>Workout Plan</h1>
-  </div>
-    <!-- Header row with names of the week -->
-    <div class="header-row">
-      <div class="header-row-cell">Monday</div>
-      <div class="header-row-cell">Tuesday</div>
-      <div class="header-row-cell">Wednesday</div>
-      <div class="header-row-cell">Thursday</div>
-      <!-- Continue adding the remaining days of the week -->
-    </div>
   <div class="grid">
     <!-- Exercise 1 -->
+    <div class="header-row-cell">
+      <h1>Monday</h1>
+    </div>
+    
     <div class="exercise">
       <img src="images/zvih_panvy_zo_zeme.jpeg" alt="Exercise 1">
-      <div class="exercise-number">1</div>
-      <h3>Zvih pánvy zo zeme</h3>
+      <!-- <div class="exercise-number">1</div> -->
+      <div class="exercise-icons">
+        <img src="icons/but.png" alt="Icon 1">
+        <img src="icons/back.png" alt="Icon 2">
+        <img src="icons/chest.png" alt="Icon 3">
+        <img src="icons/waist.png" alt="Icon 4">
+      </div>
+      <a href="exercise1_link_here">
+        <h3>Zvih pánvy zo zeme</h3>
+      </a>
       <p>Sets: 3 Reps: 15</p>
     </div>
     
@@ -151,6 +172,9 @@
 
     <!-- Continue replacing the exercises with their corresponding image sources and titles -->
 
+    <div class="header-row-cell">
+      <h1>Thurdsay</h1>
+    </div>
     <!-- Exercise 5 -->
     <div class="exercise">
       <img src="images/zadok_drep_s_cinkami.jpeg" alt="Exercise 5">
@@ -181,6 +205,10 @@
       <div class="exercise-number">2</div>
       <h3>Bocný zdvih stehien</h3>
       <p>Sets: 3 Reps: 10</p>
+    </div>
+
+    <div class="header-row-cell">
+      <h1>Wednesday</h1>
     </div>
 
     <!-- Exercise 9 -->
@@ -215,6 +243,9 @@
       <p>Sets: 4 Reps: 8</p>
     </div>
 
+    <div class="header-row-cell">
+      <h1>Thurdsay</h1>
+    </div>
     <!-- Exercise 12 -->
     <div class="exercise">
       <img src="images/ramena_natahovanie_deltovych_svalov.jpeg" alt="Exercise 12">
@@ -246,9 +277,45 @@
       <h3>Natahovanie deltových svalov</h3>
       <p>Sets: 4 Reps: 8</p>
     </div>
+    <div class="header-row-cell">
+      <h1>Friday</h1>
+    </div>
 
+        <!-- Exercise 12 -->
+        <div class="exercise">
+          <img src="images/ramena_natahovanie_deltovych_svalov.jpeg" alt="Exercise 12">
+          <div class="exercise-number">3</div>
+          <h3>Natahovanie deltových svalov</h3>
+          <p>Sets: 4 Reps: 8</p>
+        </div>
+    
+        <!-- Exercise 12 -->
+        <div class="exercise">
+          <img src="images/ramena_natahovanie_deltovych_svalov.jpeg" alt="Exercise 12">
+          <div class="exercise-number">3</div>
+          <h3>Natahovanie deltových svalov</h3>
+          <p>Sets: 4 Reps: 8</p>
+        </div>
+    
+        <!-- Exercise 12 -->
+        <div class="exercise">
+          <img src="images/ramena_natahovanie_deltovych_svalov.jpeg" alt="Exercise 12">
+          <div class="exercise-number">3</div>
+          <h3>Natahovanie deltových svalov</h3>
+          <p>Sets: 4 Reps: 8</p>
+        </div>
+    
+        <!-- Exercise 12 -->
+        <div class="exercise">
+          <img src="images/ramena_natahovanie_deltovych_svalov.jpeg" alt="Exercise 12">
+          <div class="exercise-number">3</div>
+          <h3>Natahovanie deltových svalov</h3>
+          <p>Sets: 4 Reps: 8</p>
+        </div>
     <!-- End of Exercise Blocks -->
   </div>
+
+  
 
 </body>
 </html>
