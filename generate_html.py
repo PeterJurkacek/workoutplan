@@ -4,7 +4,7 @@ import pandas as pd
 
 # Read the CSV file
 # df = pd.read_csv('your_workout_plan.csv')
-df = pd.read_csv('/Users/pj/Downloads/your_workout_plan.csv', sep=';')
+df = pd.read_csv('your_workout_plan.csv', sep=';')
 df['Warm-up'] = df['Warm-up'].notna()
 def to_snake_case(string):
     string = string.strip().lower()
@@ -13,20 +13,19 @@ def to_snake_case(string):
 df['Img'] = 'images/' + df['Exercise'].apply(to_snake_case) + ".png"
 df.loc[df['Warm-up'], 'Muscle Group'] = 'warmup'
 df['Sets'] = df['Sets'].fillna(0).astype(int) 
-df['Order'] = df.index
 # %%
 df.to_csv('workout_plan2.csv')
 # %%
-
+df['Order']
 # %%
 
 html = ''
-for day in df['Day'].unique():
-    group = df[df['Day'] == day]
+for day in [1, 2, 3, 4, 5]:
+    group = df[df['Order'] == day]
     print(day)
     day_html = f'''
     <div class="header-row-cell">
-      <h1>{day}</h1>
+      <h1>Day {day}</h1>
     </div>
     '''
     html += day_html    
