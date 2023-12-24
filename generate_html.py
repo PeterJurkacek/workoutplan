@@ -50,7 +50,7 @@ for day in [1, 2, 3, 4, 5]:
                 <div class="excercise-image-container">
                     <img src="{img}" alt="{exercise}">
                 </div>
-                <a href="{video_url}">
+                <a href="{video_url}" target="_blank">
                     <h2>{exercise}</h2>
                 </a>
             </div>
